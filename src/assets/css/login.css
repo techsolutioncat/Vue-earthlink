@@ -1,0 +1,110 @@
+p {
+    line-height: 1rem;
+  }
+.card {
+  width: 400px;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 7px;
+  margin: 35px auto;
+}
+.login-warp {
+  margin-top: 100px;
+}
+.login-warp .remember{
+  display: flex;
+}
+.group-box {
+  text-align: left;
+}
+form.form-group{
+  position: relative;
+}
+.form-group input {
+  margin-bottom: 20px;
+}
+.form-group input.btn-primary {
+  width: 100%;
+  background: #24599C;
+  margin-top: 25px;
+}
+form.form-group .remember .right{
+  position: absolute;
+  right: 0;
+}
+form.form-group .remember .right a{
+  color: #24599C;
+  font-family: Almarai;
+  font-style: normal;
+  font-weight: bold;
+}
+.form-group label{
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+.login-page {
+  /* align-items: center; */
+  display: flex;
+  height: 100vh;
+}
+.login-page .wallpaper-login {
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.login-page .fade-enter-active, .login-page .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.login-page .fade-enter, .login-page .fade-leave-to {
+  opacity: 0;
+}
+.login-page .wallpaper-register {
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.login-page .login-top {
+  text-align: center;
+}
+.login-page .login-top h1 {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  color: #212121;
+}
+.has-error{
+  color: rgb(247 10 10);
+}
+.has-error input{
+  border: solid 1px rgb(247 10 10);
+}
+.error {
+  animation-name: errorShake;
+  animation-duration: 0.3s;
+}
+@keyframes errorShake {
+  0% {
+    transform: translateX(-25px);
+  }
+  25% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  75% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
