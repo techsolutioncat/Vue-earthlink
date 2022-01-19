@@ -355,3 +355,10 @@ ul.nav-tabs li{
     padding: 0;
     border-bottom: 1px solid #cccccc;
   }
+
+@media (max-width: 768px) {
+    .mobile-center {
+        display: flex;
+        justify-content: center;
+    }
+}
